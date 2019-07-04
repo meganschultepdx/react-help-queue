@@ -1,5 +1,6 @@
 import React from 'react';
 import Ticket from './Ticket';
+import ouf from '../assets/img/ouf.jpg';
 
 let masterTicketList = [
   {
@@ -24,6 +25,7 @@ let masterTicketList = [
 function TicketList() {
   return (
     <div>
+      <img width="100%" src={ouf}/>
       <hr/>
       {masterTicketList.map((ticket, index) =>
         <Ticket names={ticket.names}
