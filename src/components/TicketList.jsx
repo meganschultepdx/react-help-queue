@@ -25,7 +25,7 @@ let masterTicketList = [
 function TicketList() {
   return (
     <div>
-      <img width="100%" src={ouf}/>
+      <img id="ouf" width="100%" src={ouf}/>
       <hr/>
       {masterTicketList.map((ticket, index) =>
         <Ticket names={ticket.names}
