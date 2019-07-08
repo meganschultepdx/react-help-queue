@@ -10,8 +10,8 @@ function Header() {
           text-align: center;
           text-transform: uppercase;
           `}</style>
-    <h1>Help Queue!</h1>
-    <Link to="/">Home</Link> | <Link to="/newticket">Create Ticket</Link>
+      <h1>Help Queue!</h1>
+      <Link to="/">Home</Link> | <Link to="/newticket">Create Ticket</Link>
     </div>
   );
 }

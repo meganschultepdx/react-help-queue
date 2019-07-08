@@ -8,7 +8,7 @@ const render = (Component) => {
   ReactDOM.render(
     <AppContainer>
       <HashRouter>
-      <Component/>
+        <Component/>
       </HashRouter>
     </AppContainer>,
     document.getElementById('react-app-root')
@@ -18,7 +18,6 @@ const render = (Component) => {
 render (App);
 
 /*eslint-disable */
-i
 if (module.hot) {
   module.hot.accept('./components/App', () => {
     render(App);
