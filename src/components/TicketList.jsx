@@ -9,11 +9,12 @@ function TicketList(props) {
     <div>
       <img id="ouf" width="100%" src={ouf}/>
       <hr/>
-      {props.ticketList.map((ticket, index) =>
+      {props.ticketList.map((ticket) =>
         <Ticket names={ticket.names}
           location={ticket.location}
           issue={ticket.issue} 
-          key={index}/>
+          formattedWaitTime={ticket.formattedWaitTime}
+          key={ticket.id}/>
       )}
     </div>
   );
