@@ -4,6 +4,7 @@ import ouf from '../assets/img/ouf.jpg';
 import PropTypes from 'prop-types';
 
 
+
 function TicketList(props) {
   return (
     <div>
@@ -12,8 +13,9 @@ function TicketList(props) {
       {props.ticketList.map((ticket) =>
         <Ticket names={ticket.names}
           location={ticket.location}
-          issue={ticket.issue} 
+          issue={ticket.issue}
           formattedWaitTime={ticket.formattedWaitTime}
+          currentRouterPath={props.currentRouterPath}
           key={ticket.id}/>
       )}
     </div>
@@ -21,7 +23,8 @@ function TicketList(props) {
 }
 
 TicketList.propTypes = {
-  ticketList: PropTypes.array
+  ticketList: PropTypes.array,
+  currentRouterPath: PropTypes.string
 };
 
 export default TicketList;
